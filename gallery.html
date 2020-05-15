@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>This is my personal website</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="gallerycss.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<a name="top">
+<style>
+* {
+  box-sizing: border-box;
+}
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
+<body>
+  <section id="heading">
+  <img src="image/f1.png" width="100%" height="50%"></section>
+
+<section id="navbar">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="aboutme.html">ABOUT ME</a></li>
+  <li><a href="experience.html">EXPERIENCE</a></li>
+  <li><a href="education.html">EDUCATION</a></li>
+  <li><a href="family.html">FAMILY</a></li>
+  <li><a href="gallery.html">GALLERY</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+</ul></section>
+
+<br>
+<h1 align="center">MY GALLERY</h1>
+<p align="center">Come and take a peek of my life</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <img src="image/family1.jpg">
+    <img src="image/a4.jpg">
+    <img src="image/a8.jpg">
+    <img src="image/h.jpg">
+    <img src="image/s4.jpg">
+    <img src="image/vb1.jpg">
+    <img src="image/s2.jpg">
+  </div>
+  <div class="column">
+    <img src="image/a1.jpg">
+    <img src="image/h5.jpg">
+    <img src="image/s5.jpg">
+    <img src="image/s9.jpg">
+    <img src="image/intership1.jpg">
+    <img src="image/a8.jpg">
+  </div>
+  <div class="column">
+    <img src="image/a2.jpg">
+    <img src="image/a6.jpg">
+    <img src="image/h3.jpg">
+    <img src="image/vb2.jpg">
+    <img src="image/kayak1.jpg">
+    <img src="image/h4.jpg">
+    <img src="image/vb2.jpg">
+  </div>
+  <div class="column">
+    <img src="image/a3.jpg">
+    <img src="image/a7.jpg">
+    <img src="image/a9.jpg">
+    <img src="image/h1.jpg">
+    <img src="image/s3.jpg">
+    <img src="image/kayak2.jpg">
+  </div>
+</div>
+<br>
+
+<center>
+<h2>My Video</h2>
+<br>
+
+<button onclick="enableAutoplay()" type="button">Enable autoplay</button>
+<button onclick="disableAutoplay()" type="button">Disable autoplay</button>
+<button onclick="checkAutoplay()" type="button">Check autoplay status</button><br> 
+
+<video id="myVideo" width="50%" height="50%" controls="controls">
+  <source src="multimedia/memories.mp4" type="video/mp4">
+  <source src="multimedia/memories.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+var vid = document.getElementById("myVideo");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
+
+function disableAutoplay() { 
+  vid.autoplay = false;
+  vid.load();
+} 
+
+function checkAutoplay() { 
+  alert(vid.autoplay);
+} 
+</script>
+</center>
+
+<br>
+<center>
+<embed src="multimedia/me.mp4" autoplay="false" width="50%" height="50%"></embed>
+</center>
+
+<div class="container">
+   <div class="footer"><a href="#top"><img src="image/up.jpg" width="3%" height="5%" align="right"></a>
+   </div>
+</div>
+<br>
+
+</body>
+</html>
